@@ -51,4 +51,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    let date = new Date();
+    let dateFooter = document.querySelector("#dateFooter");
+    dateFooter.innerText = date.getFullYear();
 });
