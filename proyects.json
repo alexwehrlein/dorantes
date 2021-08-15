@@ -1,0 +1,22 @@
+[
+    {
+        "proyecto" : "p1",
+        "imgs" : [
+            "assets/img/proyects/proyect_1.jpg",
+            "assets/img/proyects/proyect/p1/1.jpg",
+            "assets/img/proyects/proyect/p1/2.jpg",
+            "assets/img/proyects/proyect/p1/3.jpg",
+            "assets/img/proyects/proyect/p1/4.jpg",
+            "assets/img/proyects/proyect/p1/5.jpg"
+        ]
+    },
+    {
+        "proyecto" : "p2",
+        "imgs" : [
+            "assets/img/proyects/proyect_2.jpg",
+            "assets/img/proyects/proyect/p2/1.jpg",
+            "assets/img/proyects/proyect/p2/2.jpg",
+            "assets/img/proyects/proyect/p2/3.jpg"
+        ]
+    }
+]
