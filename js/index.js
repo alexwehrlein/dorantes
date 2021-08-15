@@ -3,7 +3,8 @@ const btnProyect = document.querySelectorAll(".btnImgClick");
 
 for (let i = 0; i < btnProyect.length; i++) {
     btnProyect[i].addEventListener('click', async(e) => {
-        const pt = e.target.dataset.proyect;
+        lightboxWindow();
+        /*const pt = e.target.dataset.proyect;
         fetch('../assets/proyects.json')
         .then(response => response.json())
         .then(response => {
@@ -12,13 +13,20 @@ for (let i = 0; i < btnProyect.length; i++) {
         })
         .catch((e)=>{
             console.error(e);
-        })
+        })*/
     });
 }
 
-const lightboxWindow = (imgs) => {
+const lightboxWindow = () => {
     const lightbox = new FsLightbox();
-    lightbox.props.sources = imgs;
+    lightbox.props.sources = [ 
+        "assets/img/proyects/proyect_1.jpg",
+        "assets/img/proyects/proyect/p1/1.jpg",
+        "assets/img/proyects/proyect/p1/2.jpg",
+        "assets/img/proyects/proyect/p1/3.jpg",
+        "assets/img/proyects/proyect/p1/4.jpg",
+        "assets/img/proyects/proyect/p1/5.jpg"
+    ];
     lightbox.props.onInit = () => console.log('Lightbox initialized!');
     lightbox.open();
 }
